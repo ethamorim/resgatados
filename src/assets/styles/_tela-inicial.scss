@@ -1,0 +1,18 @@
+.logo-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & .logo {
+    width: 12.5rem;
+  }
+
+  & .titulo {
+    width: 18rem;
+  }
+
+  & .divisor {
+    width: 18rem;
+  }
+}
+
