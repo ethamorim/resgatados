@@ -5,3 +5,14 @@ html {
 body {
   background-color: $defaultBackground;
 }
+
+@mixin botao {
+  width: 220px;
+  height: 48px;
+  margin: 7px;
+  border: none;
+  border-radius: 36px;
+  font-family: 'Pompiere', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
