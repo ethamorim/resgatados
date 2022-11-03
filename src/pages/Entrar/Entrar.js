@@ -13,7 +13,7 @@ class Entrar extends React.Component {
           <img src={Pata} alt="" className="pata-bg-titulo bg" />
 
           <div class="titulo-conteiner">
-            <h1>Entra na sua conta</h1>
+            <h1>Entre na sua conta</h1>
           </div>
         </header>
 
