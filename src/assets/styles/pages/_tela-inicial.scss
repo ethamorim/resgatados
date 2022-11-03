@@ -1,17 +1,10 @@
 .tela-inicial {
-  position: relative;
-  box-sizing: border-box;
-  height: 92vh;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 
   &__background {
     & img {
       position: absolute;
-      z-index: -1;
     }
 
     & .pata {

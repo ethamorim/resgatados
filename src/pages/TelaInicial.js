@@ -12,7 +12,7 @@ import PataOutline from '../assets/images/pata_outline.svg';
 function TelaInicial() {
 
   return (
-    <main className="tela-inicial">
+    <main className="screen tela-inicial">
       <section className="logo-conteiner">
         <img className="logo" src={LogoResgatados} alt="" />
         <img className="titulo" src={TituloResgatados} alt="" />
@@ -32,10 +32,10 @@ function TelaInicial() {
       </section>
 
       <article className="tela-inicial__background">
-        <img className="pata_1" src={PataOutline} alt="" />
-        <img className="pata_2" src={PataOutline} alt="" />
-        <img className="pata_3" src={PataOutline} alt="" />
-        <img className="pata_4" src={PataOutline} alt="" />
+        <img className="pata_1 bg" src={PataOutline} alt="" />
+        <img className="pata_2 bg" src={PataOutline} alt="" />
+        <img className="pata_3 bg" src={PataOutline} alt="" />
+        <img className="pata_4 bg" src={PataOutline} alt="" />
       </article>
     </main>
   );

@@ -20,3 +20,16 @@ body {
 .App {
   overflow-x: hidden;
 }
+
+.screen {
+  position: relative;
+  box-sizing: border-box;
+  height: 92vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg {
+  z-index: -1;
+}
