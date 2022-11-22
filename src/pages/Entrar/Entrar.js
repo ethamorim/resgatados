@@ -4,18 +4,14 @@ import Pata from '../../assets/images/pata.svg';
 import PataOutline from '../../assets/images/pata_outline.svg'
 import Botao from '../../components/Botao';
 
+import PataTitulo from '../../components/PataTitulo'
+
 class Entrar extends React.Component {
 
   render() {
     return (
       <div className="screen entrar">
-        <header>
-          <img src={Pata} alt="" className="pata-bg-titulo bg" />
-
-          <div class="titulo-conteiner">
-            <h1>Entre na sua conta</h1>
-          </div>
-        </header>
+        <PataTitulo>Entre na sua conta</PataTitulo>
 
         <main>
           <form className="form-rsg">
