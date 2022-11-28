@@ -42,3 +42,12 @@ body {
 .bg {
   z-index: -1;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.mrg-2 {
+  margin-top: 2rem;
+}
