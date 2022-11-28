@@ -3,8 +3,9 @@
 @import './geral';
 
 @import './pages/tela-inicial';
-@import './pages/Entrar/entrar';
-@import './pages/Cadastro/cadastro';
+@import './pages/Auth/Entrar/entrar';
+@import './pages/Auth/Cadastro/cadastro';
 
 @import './components/pata-titulo';
-@import './components//pata-voltar';
+@import './components/pata-outline-titulo';
+@import './components/pata-voltar';

@@ -1,14 +1,11 @@
 import React from "react";
 
-import PataTitulo from '../../../components/PataTitulo';
+import PrimeiraEtapa from "./PrimeiraEtapa";
 import Botao from "../../../components/Botao";
-import PataVoltar from '../../../components/PataVoltar';
 
 function CadastroObjetivo() {
   return (
-    <div className="screen cadastro">
-      <PataTitulo>Faça seu cadastro</PataTitulo>
-
+    <PrimeiraEtapa>
       <main>
         <form className="form-rsg-cdst">
           <label for="objetivo">Qual seu objetivo?</label>
@@ -20,11 +17,7 @@ function CadastroObjetivo() {
           <Botao titulo="Próximo" className="proximo" />
         </form>
       </main>
-
-      <footer>
-        <PataVoltar />
-      </footer>
-    </div>
+    </PrimeiraEtapa>
   );
 }
 
