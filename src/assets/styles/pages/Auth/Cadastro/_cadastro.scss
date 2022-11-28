@@ -26,3 +26,9 @@
   @include botao();
   background-color: $botaoEntrar;
 }
+
+.cadastrar {
+  @include botao();
+  background-color: $botaoCadastrar;
+  color: white;
+}

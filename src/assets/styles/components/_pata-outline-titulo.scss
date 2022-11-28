@@ -1,14 +1,14 @@
 .ptouttl-header {
   position: relative;
-  width: 75%;
   height: 5.5rem;
+  width: 75%;
 
   color: white;
   font-size: 1.5rem;
   font-family: 'Orienta', sans-serif;
 
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 
   & img {
     position: absolute;
@@ -17,6 +17,7 @@
   }
 
   & .titulo-conteiner {
+    margin-top: 1rem;
     margin-left: 2.5rem;
   }
 }

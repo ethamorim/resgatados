@@ -8,14 +8,16 @@ function AuthScreen(props) {
     <div className='screen'>
       {props.children}
 
-      <footer>
-        <PataVoltar />
-      </footer>
+      <div className='footer-bg-cdst'>
+        <footer>
+          <PataVoltar />
+        </footer>
 
-      <article className="auth-footer-bg">
-        <img src={PataOutline} alt="" className="pata-outline bg" />
-        <img src={Pata} alt="" className="pata bg" />
-      </article>
+        <article className="auth-footer-bg">
+          <img src={PataOutline} alt="" className="pata-outline bg" />
+          <img src={Pata} alt="" className="pata bg" />
+        </article>
+      </div>
     </div>
   );
 }
