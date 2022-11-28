@@ -1,0 +1,14 @@
+.pata-voltar {
+  display: flex;
+  align-items: center;
+
+  & img {
+    padding: 10px;
+  }
+
+  & span {
+    font-family: 'Pompiere', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+}

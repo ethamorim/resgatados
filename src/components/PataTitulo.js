@@ -4,7 +4,7 @@ import Pata from '../assets/images/pata.svg';
 
 function PataTitulo(props) {
   return (
-    <header>
+    <header className="pttl-header">
       <img src={Pata} alt="" className="pata-bg-titulo bg" />
 
       <div class="titulo-conteiner">

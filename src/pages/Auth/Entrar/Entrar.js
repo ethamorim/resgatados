@@ -2,9 +2,9 @@ import React from "react";
 
 import Pata from '../../assets/images/pata.svg';
 import PataOutline from '../../assets/images/pata_outline.svg'
-import Botao from '../../components/Botao';
+import Botao from '../../../components/Botao';
 
-import PataTitulo from '../../components/PataTitulo'
+import PataTitulo from '../../../components/PataTitulo'
 
 class Entrar extends React.Component {
 

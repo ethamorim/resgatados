@@ -1,6 +1,6 @@
 import './assets/styles/App.scss';
 
-import CadastroObjetivo from './pages/Cadastro/CadastroObjetivo';
+import CadastroObjetivo from './pages/Auth/Cadastro/CadastroObjetivo';
 
 function App() {
   return (
