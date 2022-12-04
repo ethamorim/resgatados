@@ -1,8 +1,6 @@
 import React from "react";
 
-import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
-import Entrar from './Auth/Entrar/Entrar';
-import CadastroObjetivo from './Auth/Cadastro/CadastroObjetivo';
+import { Link } from "react-router-dom";
 
 import LogoResgatados from '../assets/images/logo.svg'
 import TituloResgatados from '../assets/images/titulo_resgatados.svg';
