@@ -13,10 +13,10 @@ class Entrar extends React.Component {
 
         <main>
           <form className="form-rsg">
-            <label for="email">email:</label>
+            <label htmlFor="email">email:</label>
             <input id="email" />
 
-            <label for="senha">senha:</label>
+            <label htmlFor="senha">senha:</label>
             <input id="senha" />
 
             <Botao titulo="Entrar" className="entrar" />

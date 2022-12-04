@@ -1,6 +1,8 @@
 import React from "react";
 
-import Botao from "../components/Botao";
+import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
+import Entrar from './Auth/Entrar/Entrar';
+import CadastroObjetivo from './Auth/Cadastro/CadastroObjetivo';
 
 import LogoResgatados from '../assets/images/logo.svg'
 import TituloResgatados from '../assets/images/titulo_resgatados.svg';
@@ -10,7 +12,6 @@ import PataOutline from '../assets/images/pata_outline.svg';
 
 
 function TelaInicial() {
-
   return (
     <main className="screen tela-inicial">
       <section className="logo-conteiner">
@@ -21,10 +22,10 @@ function TelaInicial() {
       </section>
 
       <section className="acao-conteiner">
-        <Botao className="entrar" titulo="Entrar" />
-        <Botao className="cadastrar" titulo="Cadastrar" />
+        <Link to="/entrar" className="btn entrar">Entrar</Link>
+        <Link to="/cadastrar" className="btn cadastrar">Cadastrar</Link>
 
-        <a className="esqueceu-senha" href="/">Esqueceu a senha?</a>
+        <Link to="recuperar-senha" className="esqueceu-senha">Esqueceu a senha?</Link>
       </section>
 
       <section className="pets-iniciar">

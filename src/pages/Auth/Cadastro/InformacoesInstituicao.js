@@ -6,16 +6,16 @@ function InformacoesInstituicao() {
     <SegundaEtapa titulo="Informações da instituição">
       <main className='center mrg-2'>
         <form className='form-rsg'>
-          <label for="instituicao">nome da instituição:</label>
+          <label htmlFor="instituicao">nome da instituição:</label>
           <input id="instituicao" />
 
-          <label for="cnpj">cnpj:</label>
+          <label htmlFor="cnpj">cnpj:</label>
           <input id="cnpj" />
 
-          <label for="email">email:</label>
+          <label htmlFor="email">email:</label>
           <input id="email" />
 
-          <label for="telefone">telefone:</label>
+          <label htmlFor="telefone">telefone:</label>
           <input id="telefone" />
 
           <Botao titulo="Próximo" className="proximo" />

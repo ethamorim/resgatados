@@ -6,22 +6,22 @@ function Endereco() {
     <SegundaEtapa titulo="Endereço">
       <main className='center mrg-2'>
         <form className='form-rsg'>
-          <label for="cep">cep:</label>
+          <label htmlFor="cep">cep:</label>
           <input id="cep" />
 
-          <label for="endereco">endereco:</label>
+          <label htmlFor="endereco">endereco:</label>
           <input id="endereco" />
 
-          <label for="complemento">complemento:</label>
+          <label htmlFor="complemento">complemento:</label>
           <input id="complemento" />
 
-          <label for="numero">número:</label>
+          <label htmlFor="numero">número:</label>
           <input id="numero" />
 
-          <label for="cidade">cidade:</label>
+          <label htmlFor="cidade">cidade:</label>
           <input id="cidade" />
 
-          <label for="estado">estado:</label>
+          <label htmlFor="estado">estado:</label>
           <input id="estado" />
 
           <Botao titulo="Cadastrar" className="cadastrar" />

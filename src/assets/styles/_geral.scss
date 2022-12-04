@@ -16,6 +16,11 @@ body {
   font-family: 'Pompiere', sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App {

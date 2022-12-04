@@ -7,7 +7,7 @@ function PataTitulo(props) {
     <header className="pttl-header">
       <img src={Pata} alt="" className="pata-bg-titulo bg" />
 
-      <div class="titulo-conteiner">
+      <div className="titulo-conteiner">
         <h1>{props.children}</h1>
       </div>
     </header>
