@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import SegundaEtapa from './SegundaEtapa';
-import Botao from '../../../components/Botao';
 
 function InformacoesInstituicao() {
   return (
@@ -18,7 +18,7 @@ function InformacoesInstituicao() {
           <label htmlFor="telefone">telefone:</label>
           <input id="telefone" />
 
-          <Botao titulo="Próximo" className="proximo" />
+          <Link to='/cadastrar/endereco' className='proximo'>Próximo</Link>
         </form>
       </main>
     </SegundaEtapa>

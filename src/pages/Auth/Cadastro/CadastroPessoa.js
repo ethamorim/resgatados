@@ -1,18 +1,40 @@
 import PrimeiraEtapa from './PrimeiraEtapa';
-import Botao from '../../../components/Botao';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function CadastroPessoa() {
+  const opcoes = [
+    {
+      label: 'Pessoa física',
+      value: 'F'
+    },
+    {
+      label: 'ONG',
+      value: 'O'
+    }
+  ];
+  const [ pessoa, setPessoa ] = useState(opcoes[0].value);
+
+  const proximoForm = (pessoa === 'F')
+    ? '/cadastrar/pessoa/fisica'
+    : '/cadastrar/pessoa/juridica'
+
   return (
     <PrimeiraEtapa>
       <main>
         <form className='form-rsg-cdst'>
           <label htmlFor="pessoa">Você é...</label>
-          <select id="pessoa" name="pessoa">
-            <option value="F">Pessoa física</option>
-            <option value="O">ONG</option>
+          <select
+            id="pessoa"
+            name="pessoa"
+            value='F'
+            onChange={(ev) => setPessoa(ev.target.value)}>
+            {opcoes.map(el => (
+              <option value={el.value} key={el.value}>{el.label}</option>
+            ))}
           </select>
 
-          <Botao titulo="Próximo" className="proximo" />
+          <Link to={proximoForm} className="proximo">Próximo</Link>
         </form>
       </main>
     </PrimeiraEtapa>

@@ -25,6 +25,7 @@
 .proximo {
   @include botao();
   background-color: $botaoEntrar;
+  color: black;
 }
 
 .cadastrar {
