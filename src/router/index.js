@@ -9,6 +9,8 @@ import InformacoesPessoais from '../pages/Auth/Cadastro/InformacoesPessoais';
 import InformacoesInstituicao from '../pages/Auth/Cadastro/InformacoesInstituicao';
 import Endereco from '../pages/Auth/Cadastro/Endereco';
 
+import Home from '../pages/Home';
+
 export default createBrowserRouter([
   {
     path: '/',
@@ -24,22 +26,26 @@ export default createBrowserRouter([
   },
   {
     path: '/cadastrar/objetivo',
-    element: <CadastroObjetivo />
+    element: <CadastroObjetivo />,
   },
   {
     path: '/cadastrar/pessoa',
-    element: <CadastroPessoa />
+    element: <CadastroPessoa />,
   },
   {
     path: '/cadastrar/pessoa/fisica',
-    element: <InformacoesPessoais />
+    element: <InformacoesPessoais />,
   },
   {
     path: '/cadastrar/pessoa/juridica',
-    element: <InformacoesInstituicao />
+    element: <InformacoesInstituicao />,
   },
   {
     path: '/cadastrar/endereco',
-    element: <Endereco />
+    element: <Endereco />,
+  },
+  {
+    path: '/home',
+    element: <Home />,
   }
 ]);

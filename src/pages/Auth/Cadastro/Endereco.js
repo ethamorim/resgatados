@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import SegundaEtapa from './SegundaEtapa';
-import Botao from '../../../components/Botao';
 
 function Endereco() {
   return (
@@ -24,7 +24,7 @@ function Endereco() {
           <label htmlFor="estado">estado:</label>
           <input id="estado" />
 
-          <Botao titulo="Cadastrar" className="cadastrar" />
+          <Link to='/' className='cadastrar'>Cadastrar</Link>
         </form>
       </main>
     </SegundaEtapa>

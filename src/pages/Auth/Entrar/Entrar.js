@@ -1,9 +1,9 @@
 import React from "react";
 
 import AuthScreen from "../AuthScreen";
-import Botao from '../../../components/Botao';
 
 import PataTitulo from '../../../components/PataTitulo'
+import { Link } from "react-router-dom";
 
 class Entrar extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class Entrar extends React.Component {
             <label htmlFor="senha">senha:</label>
             <input id="senha" />
 
-            <Botao titulo="Entrar" className="entrar" />
+            <Link to='/home' className="entrar">Entrar</Link>
           </form>
         </main>
       </AuthScreen>
