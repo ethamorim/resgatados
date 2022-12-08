@@ -1,8 +1,8 @@
-import './style.scss';
+import sheet from './style.module.scss';
 
 function FormCadastro(props) {
   return (
-    <form className="form-rsg-cdst">
+    <form className={sheet.formResg}>
       { props.children }
     </form>
   );

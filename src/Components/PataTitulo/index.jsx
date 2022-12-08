@@ -2,14 +2,14 @@ import React from "react";
 
 import Pata from 'Assets/Images/pata.svg';
 
-import './style.scss';
+import sheet from './style.module.scss';
 
 function PataTitulo(props) {
   return (
-    <header className="pttl-header">
-      <img src={Pata} alt="" className="pata-bg-titulo" />
+    <header className={sheet.headerPataTitulo}>
+      <img src={Pata} alt="" className={sheet.bgPataTitulo} />
 
-      <div className="titulo-conteiner">
+      <div className={sheet.tituloConteiner}>
         <h1>{props.children}</h1>
       </div>
     </header>

@@ -1,13 +1,13 @@
 import PataOutline from 'Assets/Images/pata_outline.svg';
 
-import './style.scss';
+import sheet from './style.module.scss';
 
 function PataOutlineTitulo(props) {
   return (
-    <header className="ptouttl-header">
-      <img src={PataOutline} alt="" className='bg' />
+    <header className={sheet.headerPataOutTitulo}>
+      <img src={PataOutline} alt="" />
 
-      <div className='titulo-conteiner'>
+      <div className={sheet.tituloConteiner}>
         <h2>{ props.children }</h2>
       </div>
     </header>

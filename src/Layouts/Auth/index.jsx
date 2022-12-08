@@ -1,26 +1,27 @@
 import PataVoltar from 'Components/PataVoltar';
 
+import Screen from 'Layouts/Screen';
 import Pata from 'Assets/Images/pata.svg';
 import PataOutline from 'Assets/Images/pata_outline.svg'
 
-import './style.scss';
+import sheet from './style.module.scss';
 
 function Auth(props) {
   return (
-    <div className='screen'>
+    <Screen>
       {props.children}
 
-      <div className='footer-bg-cdst'>
+      <div className={sheet.footerBgResg}>
         <footer>
           <PataVoltar />
         </footer>
 
-        <article className="auth-footer-bg">
-          <img src={PataOutline} alt="" className="pata-outline bg" />
-          <img src={Pata} alt="" className="pata bg" />
+        <article className={sheet.footerBgAuth}>
+          <img src={PataOutline} alt="" className={sheet.pataOutline} />
+          <img src={Pata} alt="" className={sheet.pata} />
         </article>
       </div>
-    </div>
+    </Screen>
   );
 }
 

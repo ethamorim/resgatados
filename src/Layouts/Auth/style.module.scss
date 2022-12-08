@@ -1,0 +1,30 @@
+.footerBgResg {
+  height: 5rem;
+  display: flex;
+  align-items: flex-end;
+
+  & footer {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footerBgAuth {
+  & img {
+    position: absolute;
+  }
+
+  & .pataOutline {
+    right: 1rem;
+    bottom: 6rem;
+    width: 4rem;
+    transform: rotateZ(15deg);
+  }
+
+  & .pata {
+    right: 4rem;
+    bottom: .2rem;
+    width: 6rem;
+    transform: rotateZ(-15deg);
+  }
+}

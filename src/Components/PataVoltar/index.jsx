@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 
-import './style.scss';
+import sheet from './style.module.scss';
 
 function PataVoltar(props) {
   const navigate = useNavigate();
 
   return (
-    <div className='pata-voltar' onClick={() => {
+    <div className={sheet.pataVoltar} onClick={() => {
       navigate(-1);
     }}>
       <img src={require('Assets/Images/pata_escura.png')} alt="" />

@@ -1,10 +1,11 @@
 import SegundaEtapa from 'Layouts/SegundaEtapa';
 import BotaoLink from 'Components/BotaoLink';
+import FormCadastro from 'Layouts/FormCadastro';
 
 function InformacoesPessoa() {
   return (
     <SegundaEtapa titulo="Informações pessoais">
-      <form className='form-rsg'>
+      <FormCadastro>
         <label htmlFor="instituicao">nome completo:</label>
         <input id="instituicao" />
 
@@ -21,7 +22,7 @@ function InformacoesPessoa() {
         <input id="nascimento" />
 
         <BotaoLink to='/cadastrar/endereco' theme="light">Próximo</BotaoLink>
-      </form>
+      </FormCadastro>
     </SegundaEtapa>
   );
 }

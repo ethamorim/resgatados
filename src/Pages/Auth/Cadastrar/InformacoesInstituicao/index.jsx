@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
 import SegundaEtapa from 'Layouts/SegundaEtapa';
+import FormCadastro from 'Layouts/FormCadastro';
+import BotaoLink from 'Components/BotaoLink';
 
 function InformacoesInstituicao() {
   return (
     <SegundaEtapa titulo="Informações da instituição">
-      <main className='center mrg-2'>
-        <form className='form-rsg'>
+      <FormCadastro>
           <label htmlFor="instituicao">nome da instituição:</label>
           <input id="instituicao" />
 
@@ -18,9 +18,8 @@ function InformacoesInstituicao() {
           <label htmlFor="telefone">telefone:</label>
           <input id="telefone" />
 
-          <Link to='/cadastrar/endereco' className='proximo'>Próximo</Link>
-        </form>
-      </main>
+          <BotaoLink to='/cadastrar/endereco' theme='light'>Próximo</BotaoLink>
+      </FormCadastro>
     </SegundaEtapa>
   );
 }

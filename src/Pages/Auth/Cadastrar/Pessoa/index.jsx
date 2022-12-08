@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 import PrimeiraEtapa from 'Layouts/PrimeiraEtapa';
+import FormCadastroSelect from 'Layouts/FormCadastroSelect';
+import BotaoLink from 'Components/BotaoLink';
 
 function Pessoa() {
   const opcoes = [
@@ -23,7 +25,7 @@ function Pessoa() {
   return (
     <PrimeiraEtapa>
       <main>
-        <form className='form-rsg-cdst'>
+        <FormCadastroSelect>
           <label htmlFor="pessoa">Você é...</label>
           <select
             id="pessoa"
@@ -35,8 +37,8 @@ function Pessoa() {
             ))}
           </select>
 
-          <Link to={proximoForm} className="proximo">Próximo</Link>
-        </form>
+          <BotaoLink to={proximoForm} theme="light">Próximo</BotaoLink>
+        </FormCadastroSelect>
       </main>
     </PrimeiraEtapa>
   );

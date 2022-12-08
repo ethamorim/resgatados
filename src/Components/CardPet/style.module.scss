@@ -1,6 +1,6 @@
 @import '/src/Assets/Scss/vars.scss';
 
-.cardpet {
+.cardPet {
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
@@ -10,7 +10,7 @@
   border-radius: 8px;
   background-color: $cardPet;
 
-  .foto-conteiner {
+  .fotoConteiner {
     overflow: hidden;
     height: 75%;
     margin-bottom: 5px;
@@ -21,7 +21,7 @@
     }
   }
 
-  .info-conteiner {
+  .infoConteiner {
     width: 75%;
     height: 40px;
     display: flex;
@@ -40,7 +40,7 @@
     }
   }
 
-  .pata-deco-bg {
+  .bgPataDeco {
     position: absolute;
     bottom: -.6rem;
     right: -.6rem;

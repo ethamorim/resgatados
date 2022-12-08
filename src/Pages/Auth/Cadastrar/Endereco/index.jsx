@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom';
 import SegundaEtapa from 'Layouts/SegundaEtapa';
 import BotaoLink from 'Components/BotaoLink';
+import FormCadastro from 'Layouts/FormCadastro';
 
 function Endereco() {
   return (
     <SegundaEtapa titulo="Endereço">
-      <main className='center mrg-2'>
-        <form className='form-rsg'>
+      <FormCadastro>
           <label htmlFor="cep">cep:</label>
           <input id="cep" />
 
@@ -26,8 +25,7 @@ function Endereco() {
           <input id="estado" />
 
           <BotaoLink to="/" theme="dark">Cadastrar</BotaoLink>
-        </form>
-      </main>
+      </FormCadastro>
     </SegundaEtapa>
   );
 }

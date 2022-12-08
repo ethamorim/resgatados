@@ -1,9 +1,9 @@
-import './style.scss';
+import sheet from './style.module.scss';
 
 function Screen(props) {
   const cls = props.className
-    ? 'screen ' + props.className
-    : 'screen';
+    ? `${sheet.screen} ${props.className}`
+    : sheet.screen;
 
   return (
     <div className={cls}>

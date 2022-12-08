@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import PrimeiraEtapa from "Layouts/PrimeiraEtapa";
-import FormCadastro from "Layouts/FormCadastro";
+import FormCadastroSelect from "Layouts/FormCadastroSelect";
 import BotaoLink from "Components/BotaoLink";
 
 function Objetivo() {
@@ -24,7 +23,7 @@ function Objetivo() {
 
   return (
     <PrimeiraEtapa>
-        <FormCadastro>
+        <FormCadastroSelect>
           <label htmlFor="objetivo">Qual seu objetivo?</label>
           <select
             id="objetivo"
@@ -37,7 +36,7 @@ function Objetivo() {
           </select>
 
           <BotaoLink to={proximoForm} theme="light">Próximo</BotaoLink>
-        </FormCadastro>
+        </FormCadastroSelect>
     </PrimeiraEtapa>
   );
 }

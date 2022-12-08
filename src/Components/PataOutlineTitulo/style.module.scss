@@ -1,4 +1,4 @@
-.ptouttl-header {
+.headerPataOutTitulo {
   position: relative;
   height: 5.5rem;
   width: 75%;
@@ -11,12 +11,13 @@
   align-items: center;
 
   & img {
+    z-index: -1;
     position: absolute;
     width: 5.5rem;
     transform: rotateZ(-15deg);
   }
 
-  & .titulo-conteiner {
+  & .tituloConteiner {
     margin-top: 1rem;
     margin-left: 2.5rem;
   }
