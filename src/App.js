@@ -1,6 +1,7 @@
-import './assets/styles/App.scss';
 import { RouterProvider } from 'react-router-dom';
-import router from './router/index';
+import router from './Routes';
+
+import 'Assets/Scss/reset.scss';
 
 function App() {
   return (

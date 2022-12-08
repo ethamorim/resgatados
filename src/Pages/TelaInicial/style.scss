@@ -1,0 +1,126 @@
+@import '/src/Assets/Scss/vars.scss';
+
+.tela-inicial {
+  align-items: center;
+  justify-content: space-around;
+
+  &__background {
+    & img {
+      position: absolute;
+    }
+
+    & .pata {
+      &_1 {
+        top: -160px;
+        width: 22.5rem;
+        transform: rotateZ(-48deg);
+      }
+
+      &_2 {
+        top: .5rem;
+        left: -3.5rem;
+        width: 9rem;
+        transform: rotateZ(30deg);
+      }
+
+      &_3 {
+        bottom: 12rem;
+        right: -2rem;
+        width: 6rem;
+        transform: rotateZ(-135deg);
+      }
+
+      &_4 {
+        bottom: 19.5rem;
+        left: -3rem;
+        width: 4.5rem;
+        transform: rotateZ(-85deg);
+      }
+    }
+  }
+}
+
+.logo-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .logo {
+    position: relative;
+    top: 3rem;
+    right: 1rem;
+    width: 65.5%;
+  }
+
+  & .titulo {
+    width: 95%;
+  }
+
+  & .divisor {
+    position: relative;
+    bottom: 1rem;
+    width: 98%;
+  }
+
+  .slogan {
+    position: relative;
+    bottom: 1rem;
+    width: 75%;
+    color: white;
+    text-align: right;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 1.2rem;
+    align-self: flex-end;
+  }
+}
+
+.acao-conteiner {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .entrar {
+    background-color: $botaoEntrar;
+    color: black;
+  }
+
+  & .cadastrar {
+    background-color: $botaoCadastrar;
+    color: white;
+  }
+
+  & .esqueceu-senha {
+    margin-top: 10px;
+    font-family: 'Orienta', sans-serif;
+    text-decoration: underline;
+    color: $botaoCadastrar;
+  }
+}
+
+.pets-iniciar {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+
+  & img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: -20px;
+    bottom: -5px;
+
+    width: 350px;
+    height: 30px;
+    border-radius: 100%;
+
+    background-color: #00000034;
+    filter: blur(5px)
+  }
+}
+
