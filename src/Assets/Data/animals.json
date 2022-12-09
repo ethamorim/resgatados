@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "img": "roger.png",
+    "nome": "Roger",
+    "idade": "12",
+    "tags": [],
+    "descricao": "",
+    "divulgante": {
+      "nome": "Patas Amadas",
+      "verificado": true,
+      "descricao": "",
+      "endereco": ""
+    }
+  },
+  {
+    "id": 2,
+    "img": "donald.png",
+    "nome": "Donald",
+    "idade": "7",
+    "tag": [],
+    "descricao": "",
+    "divulgante": {
+      "nome": "ExoSalva ONG",
+      "verificado": true,
+      "descricao": "",
+      "endereco": ""
+    }
+  },
+  {
+    "id": 3,
+    "img": "marta.png",
+    "nome": "Marta",
+    "idade": "5",
+    "tag": [],
+    "descricao": "",
+    "divulgante": {
+      "nome": "SalvemPets ONG",
+      "verificado": true,
+      "descricao": "",
+      "endereco": ""
+    }
+  },
+  {
+    "id": 4,
+    "img": "ina.png",
+    "nome": "Ina",
+    "idade": "3",
+    "tag": [],
+    "descricao": "",
+    "divulgante": {
+      "nome": "Maria de Calheiros Carvalho",
+      "verificado": false,
+      "descricao": "",
+      "endereco": ""
+    }
+  },
+  {
+    "id": 5,
+    "img": "kali.png",
+    "nome": "Kali Key",
+    "idade": "6",
+    "tag": [
+      "fêmea",
+      "vacinada",
+      "castrada"
+    ],
+    "descricao": "Meu nome é Kali Key e fui resgatada em um momento muito complicado da minha vida. Demorei muito para poder confiar nos humanos, mas me tornei uma gatinha muito amigável e que adora abraços!\nProcuro alguém que cuide de mim com o carinho que eu mereço!",
+    "divulgante": {
+      "nome": "Patas Amadas",
+      "verificado": true,
+      "descricao": "Somos uma ONG focada em resgatar animais por toda região de Maceió. Temos especialistas voluntários que dão os cuidados necessários para os pets, para que assim estejam saudáveis e prontos para adoção.",
+      "endereco": "Av. Fernandes Lima, 512, Farol"
+    }
+  },
+  {
+    "id": 6,
+    "img": "alfredo.png",
+    "nome": "Alfredo",
+    "idade": "2",
+    "tag": [],
+    "descricao": "",
+    "divulgante": {
+      "nome": "ExoSalva ONG",
+      "verificado": true,
+      "descricao": "",
+      "endereco": ""
+    }
+  },
+  {
+    "id": 7,
+    "img": "davi.png",
+    "nome": "Davi",
+    "idade": "1",
+    "tag": [],
+    "descricao": "",
+    "divulgante": {
+      "nome": "Vanessa Andrade",
+      "verificado": false,
+      "descricao": "",
+      "endereco": ""
+    }
+  },
+  {
+    "id": 8,
+    "img": "calma.png",
+    "nome": "Calma",
+    "idade": "2",
+    "tag": [],
+    "descricao": "",
+    "divulgante": {
+      "nome": "Patas Amadas",
+      "verificado": true,
+      "descricao": "",
+      "endereco": ""
+    }
+  }
+]

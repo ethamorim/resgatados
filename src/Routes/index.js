@@ -3,13 +3,16 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import TelaInicial from "../Pages/TelaInicial";
 import Entrar from "../Pages/Auth/Entrar";
 
-import CadastroObjetivo from "../Pages/Auth/Cadastrar/Objetivo";
-import CadastroPessoa from '../Pages/Auth/Cadastrar/Pessoa';
-import InformacoesPessoais from '../Pages/Auth/Cadastrar/InformacoesPessoa';
+import Objetivo from "../Pages/Auth/Cadastrar/Objetivo";
+import Pessoa from '../Pages/Auth/Cadastrar/Pessoa';
+import InformacoesPessoa from '../Pages/Auth/Cadastrar/InformacoesPessoa';
 import InformacoesInstituicao from '../Pages/Auth/Cadastrar/InformacoesInstituicao';
 import Endereco from '../Pages/Auth/Cadastrar/Endereco';
 
 import Home from '../Pages/Home';
+import Animal from "Pages/Animal";
+
+import getAnimals from "Services/AnimalLoader";
 
 export default createBrowserRouter([
   {
@@ -26,15 +29,15 @@ export default createBrowserRouter([
   },
   {
     path: '/cadastrar/objetivo',
-    element: <CadastroObjetivo />,
+    element: <Objetivo />,
   },
   {
     path: '/cadastrar/pessoa',
-    element: <CadastroPessoa />,
+    element: <Pessoa />,
   },
   {
     path: '/cadastrar/pessoa/fisica',
-    element: <InformacoesPessoais />,
+    element: <InformacoesPessoa />,
   },
   {
     path: '/cadastrar/pessoa/juridica',
@@ -47,5 +50,13 @@ export default createBrowserRouter([
   {
     path: '/home',
     element: <Home />,
+    loader: () => getAnimals(),
+  },
+  {
+    path: '/home/:animal',
+    element: <Animal />,
+    loader: ({ params }) => {
+      return getAnimals(params.animal);
+    }
   }
 ]);

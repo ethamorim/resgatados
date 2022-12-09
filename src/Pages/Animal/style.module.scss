@@ -1,0 +1,26 @@
+@import '/src/Assets/Scss/vars.scss';
+
+.header {
+  background-color: #344D34;
+  padding: 5px 3px;
+}
+
+.fotoPet {
+  width: 100vw;
+}
+
+.petConteiner {
+  position: relative;
+  bottom: 2rem;
+
+  padding: 20px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  background-color: $defaultBackground;
+
+  h1 {
+    color: white;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 2.5rem;
+  }
+}
