@@ -1,0 +1,26 @@
+.tag {
+  width: 75px;
+  height: 18px;
+  margin-right: 10px;
+
+  font-size: .8rem;
+  font-family: 'Orienta', sans-serif;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  background-color: #e53d3dd5;
+}
+
+.green {
+  background-color: #73E53Dd5;
+}
+
+.lightblue {
+  background-color: #6EB5F6d5;
+}

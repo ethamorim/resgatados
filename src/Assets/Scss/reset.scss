@@ -37,6 +37,9 @@ body {
 	line-height: 1;
   background-color: $defaultBackground;
 }
+.App {
+  overflow-x: hidden;
+}
 ol, ul {
 	list-style: none;
 }

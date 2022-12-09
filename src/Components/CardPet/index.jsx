@@ -16,7 +16,7 @@ function CardPet(props) {
 
       <div className={sheet.infoConteiner}>
         <span>{pet.nome}, {pet.idade}</span>
-        <span>{pet.divulgante}</span>
+        <span>{pet.divulgante.nome}</span>
       </div>
 
       <img src={PataOutlineEscura} className={sheet.bgPataDeco} />

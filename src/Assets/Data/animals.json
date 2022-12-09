@@ -9,8 +9,8 @@
     "divulgante": {
       "nome": "Patas Amadas",
       "verificado": true,
-      "descricao": "",
-      "endereco": ""
+      "descricao": "Somos uma ONG focada em resgatar animais por toda região de Maceió. Temos especialistas voluntários que dão os cuidados necessários para os pets, para que assim estejam saudáveis e prontos para adoção.",
+      "endereco": "Av. Fernandes Lima, 512, Farol"
     }
   },
   {
@@ -18,7 +18,7 @@
     "img": "donald.png",
     "nome": "Donald",
     "idade": "7",
-    "tag": [],
+    "tags": [],
     "descricao": "",
     "divulgante": {
       "nome": "ExoSalva ONG",
@@ -32,7 +32,7 @@
     "img": "marta.png",
     "nome": "Marta",
     "idade": "5",
-    "tag": [],
+    "tags": [],
     "descricao": "",
     "divulgante": {
       "nome": "SalvemPets ONG",
@@ -46,7 +46,7 @@
     "img": "ina.png",
     "nome": "Ina",
     "idade": "3",
-    "tag": [],
+    "tags": [],
     "descricao": "",
     "divulgante": {
       "nome": "Maria de Calheiros Carvalho",
@@ -60,12 +60,21 @@
     "img": "kali.png",
     "nome": "Kali Key",
     "idade": "6",
-    "tag": [
-      "fêmea",
-      "vacinada",
-      "castrada"
+    "tags": [
+      {
+        "texto": "fêmea",
+        "cor": "red"
+      },
+      {
+        "texto": "vacinada",
+        "cor": "green"
+      },
+      {
+        "texto": "castrada",
+        "cor": "lightblue"
+      }
     ],
-    "descricao": "Meu nome é Kali Key e fui resgatada em um momento muito complicado da minha vida. Demorei muito para poder confiar nos humanos, mas me tornei uma gatinha muito amigável e que adora abraços!\nProcuro alguém que cuide de mim com o carinho que eu mereço!",
+    "descricao": "Meu nome é Kali Key e fui resgatada em um momento muito complicado da minha vida. Demorei muito para poder confiar nos humanos, mas me tornei uma gatinha muito amigável e que adora abraços!\n\nProcuro alguém que cuide de mim com o carinho que eu mereço!",
     "divulgante": {
       "nome": "Patas Amadas",
       "verificado": true,
@@ -78,7 +87,7 @@
     "img": "alfredo.png",
     "nome": "Alfredo",
     "idade": "2",
-    "tag": [],
+    "tags": [],
     "descricao": "",
     "divulgante": {
       "nome": "ExoSalva ONG",
@@ -92,7 +101,7 @@
     "img": "davi.png",
     "nome": "Davi",
     "idade": "1",
-    "tag": [],
+    "tags": [],
     "descricao": "",
     "divulgante": {
       "nome": "Vanessa Andrade",
@@ -106,13 +115,13 @@
     "img": "calma.png",
     "nome": "Calma",
     "idade": "2",
-    "tag": [],
+    "tags": [],
     "descricao": "",
     "divulgante": {
       "nome": "Patas Amadas",
       "verificado": true,
-      "descricao": "",
-      "endereco": ""
+      "descricao": "Somos uma ONG focada em resgatar animais por toda região de Maceió. Temos especialistas voluntários que dão os cuidados necessários para os pets, para que assim estejam saudáveis e prontos para adoção.",
+      "endereco": "Av. Fernandes Lima, 512, Farol"
     }
   }
 ]

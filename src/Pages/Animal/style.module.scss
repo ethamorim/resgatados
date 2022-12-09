@@ -17,10 +17,69 @@
   border-top-left-radius: 36px;
   border-top-right-radius: 36px;
   background-color: $defaultBackground;
+  font-family: 'Orienta', sans-serif;
 
   h1 {
+    margin-bottom: 10px;
     color: white;
     font-family: 'Pompiere', sans-serif;
     font-size: 2.5rem;
+  }
+
+  p {
+    color: white;
+    white-space: pre-line;
+  }
+
+  .descricao {
+    margin: 20px 0;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      width: 100%;
+      max-width: 300px;
+      margin: 7px;
+
+      & i {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+.divulgante {
+  margin-top: 15px;
+  padding: 5px;
+  border: 2px solid #A3B18A;
+  border-radius: 8px;
+  color: white;
+
+  h3 {
+    color: #405123;
+  }
+
+  &Nome {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #90b77d9f;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 1.8rem;
+    display: inline-block;
+  }
+
+  &Descricao {
+    margin: 10px 5px;
+    font-size: .9rem;
+  }
+
+  &Endereco {
+    margin: 0 5px;
+    font-size: .8rem;
   }
 }
