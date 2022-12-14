@@ -19,12 +19,33 @@
   background-color: $defaultBackground;
   font-family: 'Orienta', sans-serif;
 
-  h1 {
-    margin-bottom: 10px;
-    color: white;
-    font-family: 'Pompiere', sans-serif;
-    font-size: 2.5rem;
+  .tituloHeader {
+    position: relative;
+
+    h1 {
+      margin-bottom: 10px;
+      color: white;
+      font-family: 'Pompiere', sans-serif;
+      font-size: 2.5rem;
+    }
+
+    & .pataDeco {
+      position: absolute;
+
+      &_1 {
+        transform: rotateZ(-20deg);
+        top: 0;
+        right: 40px;
+      }
+
+      &_2 {
+        transform: rotateZ(20deg);
+        top: 30px;
+        right: 0;
+      }
+    }
   }
+
 
   p {
     color: white;

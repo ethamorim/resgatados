@@ -1,0 +1,49 @@
+.sobre {
+  padding: 30px 15px;
+
+  label {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-family: 'Pompiere', sans-serif;
+    display: block;
+  }
+
+  span, p {
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Orienta', sans-serif;
+  }
+
+  .row {
+    & > div {
+      width: 50%;
+      display: inline-block;
+    }
+  }
+}
+
+.tagContribuinte {
+  position: relative;
+  margin: 10px;
+  padding: 7px;
+  background-color: rgba(227, 178, 0, 80%);
+  border-radius: 8px;
+
+  img {
+    position: absolute;
+    right: 1rem;
+    top: -2.3rem;
+    width: 2.5rem;
+    filter: opacity(.8);
+  }
+
+  span {
+    font-family: 'Pompiere', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-family: 'Orienta', sans-serif;
+    font-size: .9rem;
+  }
+}

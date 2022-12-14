@@ -22,7 +22,20 @@ function Animal() {
       />
 
       <section className={sheet.petConteiner}>
-        <h1>{pet.nome}, {pet.idade} anos</h1>
+        <div className={sheet.tituloHeader}>
+          <h1>{pet.nome}, {pet.idade} anos</h1>
+
+          <img
+            src={require('Assets/Images/pata_clara35px.png')}
+            alt=""
+            className={`${sheet.pataDeco} ${sheet.pataDeco_1}`}
+          />
+          <img
+            src={require('Assets/Images/pata_clara35px.png')}
+            alt=""
+            className={`${sheet.pataDeco} ${sheet.pataDeco_2}`}
+          />
+        </div>
 
         {pet.tags.map(el => (
           <Tag tag={el} />

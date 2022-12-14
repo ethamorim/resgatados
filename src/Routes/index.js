@@ -11,8 +11,10 @@ import Endereco from '../Pages/Auth/Cadastrar/Endereco';
 
 import Home from '../Pages/Home';
 import Animal from "Pages/Animal";
+import Perfil from "Pages/Perfil";
 
 import getAnimals from "Services/AnimalLoader";
+import getUsuarios from "Services/UsuarioLoader";
 
 export default createBrowserRouter([
   {
@@ -57,6 +59,13 @@ export default createBrowserRouter([
     element: <Animal />,
     loader: ({ params }) => {
       return getAnimals(params.animal);
+    }
+  },
+  {
+    path: 'perfil/:username',
+    element: <Perfil />,
+    loader: ({ params }) => {
+      return getUsuarios(params.username);
     }
   }
 ]);

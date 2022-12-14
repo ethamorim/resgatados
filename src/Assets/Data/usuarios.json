@@ -1,0 +1,42 @@
+[
+  {
+    "user": "deisantix",
+    "img": "ytalo.jpg",
+    "nome": "Ytalo Amorim",
+    "contribuinte": true,
+    "objetivo": "adotar",
+    "dataNascimento": "2003-11-10",
+    "idade": 19,
+    "mora": "apartamento",
+    "maisSobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "adotados": [
+      {
+        "id": 5,
+        "img": "kali.png",
+        "nome": "Kali Key",
+        "idade": "6",
+        "tags": [
+          {
+            "texto": "fêmea",
+            "cor": "red"
+          },
+          {
+            "texto": "vacinada",
+            "cor": "green"
+          },
+          {
+            "texto": "castrada",
+            "cor": "lightblue"
+          }
+        ],
+        "descricao": "Meu nome é Kali Key e fui resgatada em um momento muito complicado da minha vida. Demorei muito para poder confiar nos humanos, mas me tornei uma gatinha muito amigável e que adora abraços!\n\nProcuro alguém que cuide de mim com o carinho que eu mereço!",
+        "divulgante": {
+          "nome": "Patas Amadas",
+          "verificado": true,
+          "descricao": "Somos uma ONG focada em resgatar animais por toda região de Maceió. Temos especialistas voluntários que dão os cuidados necessários para os pets, para que assim estejam saudáveis e prontos para adoção.",
+          "endereco": "Av. Fernandes Lima, 512, Farol"
+        }
+      }
+    ]
+  }
+]
