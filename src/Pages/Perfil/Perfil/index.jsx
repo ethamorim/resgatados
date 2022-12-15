@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 import PataVoltar from "Components/PataVoltar";
 import Tabs from "Layouts/Tabs";
@@ -30,6 +30,10 @@ function Perfil() {
       <main className={sheet.perfil}>
         <header>
           <PataVoltar theme="light" />
+
+          <Link to={`/perfil/${usuario.user}/config`}>
+            <img src={require("Assets/Images/icon_config.png")} alt="" />
+          </Link>
         </header>
 
         <section>

@@ -13,7 +13,8 @@ import Home from '../Pages/Home';
 import Animal from "Pages/Animal";
 import Adotar from "Pages/Adotar";
 
-import Perfil from "Pages/Perfil";
+import Perfil from "Pages/Perfil/Perfil";
+import PerfilConfig from 'Pages/Perfil/Config';
 
 import getAnimals from "Services/AnimalLoader";
 import getUsuarios from "Services/UsuarioLoader";
@@ -76,5 +77,9 @@ export default createBrowserRouter([
     loader: ({ params }) => {
       return getUsuarios(params.username);
     }
+  },
+  {
+    path: 'perfil/:username/config',
+    element: <PerfilConfig />
   }
 ]);

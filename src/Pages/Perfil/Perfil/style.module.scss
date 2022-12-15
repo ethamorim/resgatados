@@ -2,6 +2,12 @@
   padding: 5px;
   background-color: #344D34;
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   section {
     height: 250px;
 
