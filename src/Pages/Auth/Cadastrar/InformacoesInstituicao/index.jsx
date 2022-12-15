@@ -1,6 +1,6 @@
 import SegundaEtapa from 'Layouts/SegundaEtapa';
 import FormCadastro from 'Layouts/FormCadastro';
-import BotaoLink from 'Components/BotaoLink';
+import BotaoLink from 'Components/Botao/BotaoLink';
 
 function InformacoesInstituicao() {
   return (

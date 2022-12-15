@@ -14,17 +14,21 @@ function Home() {
   });
 
   return (
-    <Screen className={sheet.screenHome}>
-      <header>
-        <Link to="/perfil/deisantix">
-          <img src={require('Assets/Images/ytalo.jpg')} alt="" />
-        </Link>
+    <div>
+      <header className={sheet.homeHeaderConteiner}>
+        <div className={sheet.homeHeader}>
+          <Link to="/perfil/deisantix" className={sheet.linkPerfil}>
+            <img src={require('Assets/Images/ytalo.jpg')} alt="" />
+          </Link>
+        </div>
       </header>
 
-      <main className={sheet.home}>
-        { pets }
-      </main>
-    </Screen>
+      <Screen className={sheet.screenHome}>
+        <main className={sheet.home}>
+          { pets }
+        </main>
+      </Screen>
+    </div>
   );
 }
 

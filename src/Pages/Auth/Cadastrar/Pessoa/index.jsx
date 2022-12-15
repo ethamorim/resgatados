@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import PrimeiraEtapa from 'Layouts/PrimeiraEtapa';
 import FormCadastroSelect from 'Layouts/FormCadastroSelect';
-import BotaoLink from 'Components/BotaoLink';
+import BotaoLink from 'Components/Botao/BotaoLink';
 
 function Pessoa() {
   const opcoes = [

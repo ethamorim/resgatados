@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import sheet from './style.module.scss';
+import sheet from '../style.module.scss';
 
 function BotaoLink(props) {
   const cls = props.theme

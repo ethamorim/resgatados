@@ -11,6 +11,8 @@ import Endereco from '../Pages/Auth/Cadastrar/Endereco';
 
 import Home from '../Pages/Home';
 import Animal from "Pages/Animal";
+import Adotar from "Pages/Adotar";
+
 import Perfil from "Pages/Perfil";
 
 import getAnimals from "Services/AnimalLoader";
@@ -57,6 +59,13 @@ export default createBrowserRouter([
   {
     path: '/home/:animal',
     element: <Animal />,
+    loader: ({ params }) => {
+      return getAnimals(params.animal);
+    }
+  },
+  {
+    path: '/home/:animal/adotar',
+    element: <Adotar />,
     loader: ({ params }) => {
       return getAnimals(params.animal);
     }

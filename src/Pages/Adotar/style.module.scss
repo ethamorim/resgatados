@@ -1,0 +1,92 @@
+.formAdocao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  & legend {
+    text-transform: uppercase;
+    color: #A3B18A;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  & label {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+    font-family: 'Pompiere', sans-serif;
+  }
+
+  & input, & select {
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 36px;
+    font-family: 'Orienta', sans-serif;
+    font-size: 1rem;
+  }
+
+  & textarea {
+    height: 80px;
+    border: 0;
+    border-radius: 8px;
+    resize: vertical;
+  }
+
+  & .obsNome, & .obsSolicitar {
+    font-family: 'Orienta', sans-serif;
+    color: #344D34;
+  }
+
+  & .obsNome {
+    width: 230px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: .7rem;
+  }
+
+  & .obsSolicitar {
+    width: 270px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  & .endereco {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #A3B18A;
+    border-radius: 8px;
+    font-family: 'Orienta', sans-serif;
+
+    & h3 {
+      color: #405123;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      font-size: .95rem;
+      color: white;
+    }
+  }
+
+  & .botaoSolicitar {
+    align-items: center;
+
+    button {
+      width: 100%;
+      max-width: 320px;
+      margin: 0;
+    }
+  }
+}

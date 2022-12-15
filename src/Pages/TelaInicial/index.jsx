@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Screen from "Layouts/Screen";
-import BotaoLink from "Components/BotaoLink";
+import BotaoLink from "Components/Botao/BotaoLink";
 
 import LogoResgatados from 'Assets/Images/logo.svg'
 import TituloResgatados from 'Assets/Images/titulo_resgatados.svg';

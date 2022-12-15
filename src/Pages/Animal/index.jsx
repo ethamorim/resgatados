@@ -1,4 +1,4 @@
-import BotaoLink from "Components/BotaoLink";
+import BotaoLink from "Components/Botao/BotaoLink";
 import PataVoltar from "Components/PataVoltar";
 import Tag from "Components/Tag";
 import { useLoaderData } from "react-router-dom";
@@ -38,14 +38,20 @@ function Animal() {
         </div>
 
         {pet.tags.map(el => (
-          <Tag tag={el} />
+          <Tag tag={el} key={el.texto} />
         ))}
 
         <p className={sheet.descricao}>{pet.descricao}</p>
 
         <div className={sheet.botoes}>
-          <BotaoLink theme="light">Adotar <i className="material-icons">add_moderator</i></BotaoLink>
-          <BotaoLink theme="dark">Compartilhar <i className="material-icons">share</i></BotaoLink>
+          <BotaoLink theme="light" to={`/home/${pet.id}/adotar`}>
+            Adotar
+            <i className="material-icons">add_moderator</i>
+          </BotaoLink>
+          <BotaoLink theme="dark">
+            Compartilhar
+            <i className="material-icons">share</i>
+          </BotaoLink>
         </div>
 
         <article className={sheet.divulgante}>

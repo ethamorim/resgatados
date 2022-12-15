@@ -2,9 +2,36 @@
   background-color: white;
 }
 
+.homeHeader {
+  &Conteiner {
+    position: relative;
+    height: 100px;
+    background-color: white;
+  }
+
+  height: 80px;
+  background-color: #344D34;
+
+  & .linkPerfil {
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+
+    width: 90px;
+    height: 90px;
+    display: block;
+
+    & img {
+      box-sizing: border-box;
+      width: 100%;
+      border: 4px solid #344D34;
+      border-radius: 50%;
+    }
+  }
+}
+
 .home {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
