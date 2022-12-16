@@ -6,7 +6,10 @@ function BotaoAcao(props) {
     : sheet.btn;
 
   return (
-    <button className={cls}>
+    <button className={cls} onClick={(ev) => {
+      ev.preventDefault();
+      props.onClick();
+    }}>
       {props.children}
     </button>
   );

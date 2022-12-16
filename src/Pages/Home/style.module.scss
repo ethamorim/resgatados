@@ -9,8 +9,32 @@
     background-color: white;
   }
 
-  height: 80px;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 10px;
   background-color: #344D34;
+  display: flex;
+  align-items: center;
+
+  & .pesquisar {
+    box-sizing: border-box;
+    position: absolute;
+    top: 1.5rem;
+
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #A3B18A;
+    border: 3px solid #344D34;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 2rem;
+      color: black
+    }
+  }
 
   & .linkPerfil {
     position: absolute;

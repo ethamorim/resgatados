@@ -1,8 +1,8 @@
 import CoroaContribuinte from 'Assets/Images/coroa-contribuinte.svg'
 
-import sheet from './style.module.scss';
+import sheet from '../style.module.scss';
 
-function Sobre(props) {
+function SobreAdotante(props) {
   const user = props.sobre;
   const idade = new Date().getFullYear() - new Date(user.dataNascimento).getFullYear();
 
@@ -43,4 +43,4 @@ function Sobre(props) {
   );
 }
 
-export default Sobre;
+export default SobreAdotante;

@@ -1,16 +1,22 @@
 import PataVoltar from "Components/PataVoltar";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { setUsuarioAtivo } from "Services/UsuarioLoader";
 
 import sheet from './style.module.scss';
 
 function PerfilConfig() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <header>
         <PataVoltar />
       </header>
 
-      <Link to="/" className={sheet.linkSair}>Sair</Link>
+      <span className={sheet.linkSair} onClick={() =>{
+        setUsuarioAtivo(null);
+        navigate('/');
+      }}>Sair</span>
     </div>
   );
 }

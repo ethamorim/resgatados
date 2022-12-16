@@ -10,6 +10,7 @@ import InformacoesInstituicao from '../Pages/Auth/Cadastrar/InformacoesInstituic
 import Endereco from '../Pages/Auth/Cadastrar/Endereco';
 
 import Home from '../Pages/Home';
+import Pesquisar from "Pages/Pesquisar";
 import Animal from "Pages/Animal";
 import Adotar from "Pages/Adotar";
 
@@ -17,7 +18,7 @@ import Perfil from "Pages/Perfil/Perfil";
 import PerfilConfig from 'Pages/Perfil/Config';
 
 import getAnimals from "Services/AnimalLoader";
-import getUsuarios from "Services/UsuarioLoader";
+import { getUsuarios } from "Services/UsuarioLoader";
 
 export default createBrowserRouter([
   {
@@ -72,14 +73,18 @@ export default createBrowserRouter([
     }
   },
   {
-    path: 'perfil/:username',
+    path: '/perfil/:username',
     element: <Perfil />,
     loader: ({ params }) => {
       return getUsuarios(params.username);
     }
   },
   {
-    path: 'perfil/:username/config',
+    path: '/perfil/:username/config',
     element: <PerfilConfig />
+  },
+  {
+    path: '/pesquisar',
+    element: <Pesquisar />
   }
 ]);
