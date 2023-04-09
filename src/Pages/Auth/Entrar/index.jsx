@@ -4,29 +4,32 @@ import Auth from "Layouts/Auth";
 import PataTitulo from 'Components/PataTitulo';
 import FormCadastro from "Layouts/FormCadastro";
 import BotaoAcao from "Components/Botao/BotaoAcao";
-import { getUsuarios, setUsuarioAtivo } from "Services/UsuarioLoader";
+import { setUsuarioAtivo } from "Services/UsuarioLoader";
 
 import sheet from './style.module.scss';
 import { useNavigate } from "react-router-dom";
+import axios from 'App/axios';
 
 function Entrar() {
   const [ login, setLogin ] = useState();
   const [ senha, setSenha ] = useState();
   const navigate = useNavigate();
 
-  const handleEntrar = () => {
+  const handleEntrar = async () => {
     try {
       if (!login || !senha)
         throw new Error('Login e senha obrigatórios');
 
-      const usuario = getUsuarios(login);
-      if (!usuario || usuario.senha !== senha)
-        throw new Error('Usuário ou senha inválidos!');
+      const { data } = await axios.get('/usuarios');
+      const usuario = data.find(el => el.user === login);
+      if (!usuario || usuario.senha !== senha) {
+        throw new Error('Usuário ou senha inválidos');
+      }
 
       setUsuarioAtivo(usuario);
       navigate('/home');
     } catch (error) {
-      alert(error.message);
+      console.log(error);
     }
   };
 

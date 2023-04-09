@@ -1,4 +1,5 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
+import axios from 'App/axios';
 
 import TelaInicial from "../Pages/TelaInicial";
 import Entrar from "../Pages/Auth/Entrar";
@@ -56,7 +57,10 @@ export default createBrowserRouter([
   {
     path: '/home',
     element: <Home />,
-    loader: () => getAnimals(),
+    loader: async () => {
+      const { data } = await axios.get('/animais')
+      return data;
+    },
   },
   {
     path: '/home/:animal',

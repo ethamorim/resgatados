@@ -29,7 +29,7 @@ function Pessoa() {
           <select
             id="pessoa"
             name="pessoa"
-            value='F'
+            value={pessoa}
             onChange={(ev) => setPessoa(ev.target.value)}>
             {opcoes.map(el => (
               <option value={el.value} key={el.value}>{el.label}</option>

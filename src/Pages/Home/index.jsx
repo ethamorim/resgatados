@@ -7,13 +7,16 @@ import sheet from './style.module.scss';
 
 function Home() {
   const dadosPets = useLoaderData();
-  const usuario = getUsuarioAtivo()
+  // const usuario = getUsuarioAtivo()
 
-  const pets = dadosPets.map(el => {
-    return (
-      <CardPet key={el.id} pet={el} />
-    );
-  });
+  const getCardsPets = () => {
+    console.log(dadosPets);
+      return dadosPets.map(el => {
+        return (
+          <CardPet key={el.id} pet={el} />
+        );
+      });
+  };
 
   return (
     <div>
@@ -23,15 +26,15 @@ function Home() {
             <i className='material-icons'>search</i>
           </Link>
 
-          <Link to={`/perfil/${usuario.user}`} className={sheet.linkPerfil}>
-            <img src={require(`Assets/Images/users/${usuario.img}`)} alt="" />
+          <Link to={`/perfil/${null}`} className={sheet.linkPerfil}>
+            <img src={require(`Assets/Images/users/deisantix.jpg`)} alt="" />
           </Link>
         </div>
       </header>
 
       <Screen className={sheet.screenHome}>
         <main className={sheet.home}>
-          { pets }
+          { getCardsPets() }
         </main>
       </Screen>
     </div>

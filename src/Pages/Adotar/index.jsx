@@ -1,12 +1,12 @@
 import BotaoAcao from "Components/Botao/BotaoAcao";
 import PataVoltar from "Components/PataVoltar";
 import Screen from "Layouts/Screen";
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 
 import sheet from './style.module.scss';
 
 function Adotar() {
-  const pet = useLoaderData();
+  // const pet = useLoaderData();
 
   return (
     <Screen>

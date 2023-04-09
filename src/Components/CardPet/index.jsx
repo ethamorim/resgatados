@@ -11,15 +11,15 @@ function CardPet(props) {
   return (
     <div className={sheet.cardPet} onClick={() => navigate(`/home/${pet.id}`)}>
       <div className={sheet.fotoConteiner}>
-        <img src={require(`Assets/Images/pets/${pet.img}`)} alt="" />
+        {/* <img src={require(`Assets/Images/pets/${pet.img}`)} alt="" /> */}
       </div>
 
       <div className={sheet.infoConteiner}>
         <span>{pet.nome}, {pet.idade}</span>
-        <span>{pet.divulgante.nome}</span>
+        <span>{pet.divulgador.nome}</span>
       </div>
 
-      <img src={PataOutlineEscura} className={sheet.bgPataDeco} />
+      <img src={PataOutlineEscura} className={sheet.bgPataDeco} alt="" />
     </div>
   );
 }
