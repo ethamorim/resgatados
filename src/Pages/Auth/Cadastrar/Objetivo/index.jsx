@@ -1,10 +1,15 @@
-import React, { useState } from "react";
-
 import PrimeiraEtapa from "Layouts/PrimeiraEtapa";
 import FormCadastroSelect from "Layouts/FormCadastroSelect";
 import BotaoLink from "Components/Botao/BotaoLink";
 
+import { useSelector, useDispatch } from "react-redux";
+import { setObjetivo } from "Features/Cadastro/cadastroSlice";
+
 function Objetivo() {
+  const objetivo = useSelector((state) => state.cadastro.objetivo);
+
+  const dispatch = useDispatch();
+
   const opcoes = [
     {
       label: 'Adotar',
@@ -15,7 +20,6 @@ function Objetivo() {
       value: 'D'
     }
   ];
-  const [ objetivo, setObjetivo ] = useState(opcoes[0].value);
 
   const proximoForm = (objetivo === 'A')
     ? '/cadastrar/pessoa/fisica'
@@ -29,7 +33,7 @@ function Objetivo() {
             id="objetivo"
             name="objetivo"
             value={objetivo}
-            onChange={(ev) => setObjetivo(ev.target.value)}>
+            onChange={(ev) => dispatch(setObjetivo(ev.target.value))}>
             {opcoes.map(el => (
               <option value={el.value} key={el.value} >{el.label}</option>
             ))}
