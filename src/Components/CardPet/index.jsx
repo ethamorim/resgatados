@@ -9,7 +9,7 @@ function CardPet(props) {
   const navigate = useNavigate();
 
   return (
-    <div className={sheet.cardPet} onClick={() => navigate(`/home/${pet.id}`)}>
+    <div className={sheet.cardPet} onClick={() => navigate(`/home/${pet.id}`)} role="card-pet">
       <div className={sheet.fotoConteiner}>
         {/* <img src={require(`Assets/Images/pets/${pet.img}`)} alt="" /> */}
       </div>

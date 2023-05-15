@@ -10,7 +10,6 @@ function Home() {
   const usuario = getUsuarioAtivo()
 
   const getCardsPets = () => {
-    console.log(dadosPets);
       return dadosPets.map(el => {
         return (
           <CardPet key={el.id} pet={el} />
