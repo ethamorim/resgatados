@@ -1,8 +1,8 @@
-import PataVoltar from 'Components/PataVoltar';
+import PataVoltar from '../../Components/PataVoltar';
 
-import Screen from 'Layouts/Screen';
-import Pata from 'Assets/Images/pata.svg';
-import PataOutline from 'Assets/Images/pata_outline.svg'
+import Screen from '../../Layouts/Screen';
+import Pata from '../../Assets/Images/pata.svg';
+import PataOutline from '../../Assets/Images/pata_outline.svg'
 
 import sheet from './style.module.scss';
 

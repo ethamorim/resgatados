@@ -1,4 +1,4 @@
-import usuarios from 'Assets/Data/usuarios.json';
+import usuarios from '../Assets/Data/usuarios.json';
 
 let usuarioAtivo = null;
 

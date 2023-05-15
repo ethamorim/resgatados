@@ -62,6 +62,7 @@ function InformacoesInstituicao() {
             id="senha"
             value={senha}
             onChange={(ev) => setSenha(ev.target.value)}
+            type="password"
           />
 
           <BotaoAcao

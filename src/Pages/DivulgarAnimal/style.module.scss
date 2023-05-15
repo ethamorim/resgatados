@@ -1,0 +1,31 @@
+.divulgarAnimalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & legend {
+    font-family: 'Pompiere', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #A3B18A;
+  }
+}
+
+.infoBasica {
+  display: flex;
+
+  & section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.fotoAnimal {
+  width: 130px;
+  height: 130px;
+  border-radius: 8px;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+}

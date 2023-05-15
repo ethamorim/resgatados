@@ -14,6 +14,7 @@ import Home from '../Pages/Home';
 import Pesquisar from "Pages/Pesquisar";
 import Animal from "Pages/Animal";
 import Adotar from "Pages/Adotar";
+import DivulgarAnimal from "Pages/DivulgarAnimal";
 
 import Perfil from "Pages/Perfil/Perfil";
 import PerfilConfig from 'Pages/Perfil/Config';
@@ -90,5 +91,9 @@ export default createBrowserRouter([
   {
     path: '/pesquisar',
     element: <Pesquisar />
+  },
+  {
+    path: '/divulgar-animal',
+    element: <DivulgarAnimal />
   }
 ]);

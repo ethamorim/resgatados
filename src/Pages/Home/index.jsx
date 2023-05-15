@@ -7,7 +7,7 @@ import sheet from './style.module.scss';
 
 function Home() {
   const dadosPets = useLoaderData();
-  // const usuario = getUsuarioAtivo()
+  const usuario = getUsuarioAtivo()
 
   const getCardsPets = () => {
     console.log(dadosPets);
@@ -37,6 +37,14 @@ function Home() {
           { getCardsPets() }
         </main>
       </Screen>
+
+      {
+        (usuario.tipo === 'divulgador')
+          ? (
+            <Link to='/divulgar-animal'>Adicionar Animal</Link>
+          )
+          : null
+      }
     </div>
   );
 }

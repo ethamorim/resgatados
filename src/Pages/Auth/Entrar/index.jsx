@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-import Auth from "Layouts/Auth";
-import PataTitulo from 'Components/PataTitulo';
-import FormCadastro from "Layouts/FormCadastro";
-import BotaoAcao from "Components/Botao/BotaoAcao";
-import { setUsuarioAtivo } from "Services/UsuarioLoader";
+import Auth from "../../../Layouts/Auth";
+import PataTitulo from '../../../Components/PataTitulo';
+import FormCadastro from "../../../Layouts/FormCadastro";
+import BotaoAcao from "../../../Components/Botao/BotaoAcao";
+import { setUsuarioAtivo } from "../../../Services/UsuarioLoader";
 
 import sheet from './style.module.scss';
 import { useNavigate } from "react-router-dom";
-import axios from 'App/axios';
+import axios from '../../../App/axios';
 
 function Entrar() {
   const [ login, setLogin ] = useState();
