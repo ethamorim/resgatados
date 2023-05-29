@@ -89,6 +89,7 @@ function Endereco() {
             let objetoCadastro = new Object();
             const info = cadastro.informacoes;
             const ende = cadastro.endereco;
+            const endereco = `${ende.endereco}, ${ende.complemento} ${ende.numero}, ${ende.cidade}, ${ende.estado}`;
 
             if (cadastro.objetivo === 'A')
               objetoCadastro = {
@@ -99,11 +100,7 @@ function Endereco() {
                 data_nascimento: info.dataNascimento,
                 senha: info.senha,
                 cep: ende.cep,
-                endereco: ende.endereco,
-                complemento: ende.complemento,
-                numero: ende.numero,
-                cidade: ende.cidade,
-                estado: ende.estado,
+                endereco: endereco,
                 tipo: cadastro.objetivo,
               };
             else
@@ -114,11 +111,7 @@ function Endereco() {
                 email: info.email,
                 senha: info.senha,
                 cep: ende.cep,
-                endereco: ende.endereco,
-                complemento: ende.complemento,
-                numero: ende.numero,
-                cidade: ende.cidade,
-                estado: ende.estado,
+                endereco: endereco,
                 tipo: cadastro.objetivo,
               }
             await axios.post('/usuarios', objetoCadastro);

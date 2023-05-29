@@ -7,7 +7,7 @@ import sheet from './style.module.scss';
 
 function Animal() {
   const pet = useLoaderData();
-  const divulgante = pet.divulgante;
+  const divulgador = pet.divulgador;
 
   return (
     <div>
@@ -16,14 +16,14 @@ function Animal() {
       </header>
 
       <img
-        src={require(`Assets/Images/pets/${pet.img}`)}
+        src={require(`Assets/Images/pets/kali.png`)}
         alt=""
         className={sheet.fotoPet}
       />
 
       <section className={sheet.petConteiner}>
         <div className={sheet.tituloHeader}>
-          <h1>{pet.nome}, {pet.idade} anos</h1>
+          <h1>{pet.nome}, {pet.idade}</h1>
 
           <img
             src={require('Assets/Images/pata_clara35px.png')}
@@ -37,9 +37,9 @@ function Animal() {
           />
         </div>
 
-        {pet.tags.map(el => (
+        {/* {pet.tags.map(el => (
           <Tag tag={el} key={el.texto} />
-        ))}
+        ))} */}
 
         <p className={sheet.descricao}>{pet.descricao}</p>
 
@@ -56,12 +56,12 @@ function Animal() {
 
         <article className={sheet.divulgante}>
           <h3>Informações da Instituição:</h3>
-          <span className={sheet.divulganteNome}>{divulgante.nome}</span>
+          <span className={sheet.divulganteNome}>{divulgador.nome}</span>
 
-          <p className={sheet.divulganteDescricao}>{divulgante.descricao}</p>
+          <p className={sheet.divulganteDescricao}>{divulgador.descricao}</p>
 
           <h3>Endereço:</h3>
-          <span className={sheet.divulganteEndereco}>{divulgante.endereco}</span>
+          <span className={sheet.divulganteEndereco}>{divulgador.endereco}</span>
         </article>
       </section>
     </div>

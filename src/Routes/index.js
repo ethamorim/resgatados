@@ -67,7 +67,8 @@ export default createBrowserRouter([
     path: '/home/:animal',
     element: <Animal />,
     loader: async ({ params }) => {
-      const { data } = axios.get(`/animais/${params.animal}`);
+      const { data } = await axios.get(`/animais/${params.animal}`);
+      return data;
     }
   },
   {
