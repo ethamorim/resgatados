@@ -66,3 +66,33 @@
   }
 }
 
+.divulgarNovo {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  width: 190px;
+  height: 40px;
+  border-radius: 32px;
+  background-color: #FFC700;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  & a {
+    color: black;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: #E3B100;
+  }
+}
+

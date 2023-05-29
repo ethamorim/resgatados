@@ -17,10 +17,6 @@ function Divulgados(props) {
         </div>
         { props.divulgados ? '' : <span>Animais divulgados por você aparecerão aqui</span> }
       </section>
-
-      <article className={sheet.divulgarNovo} role="divulgar-novo">
-        <Link to="/divulgar-animal">Divulgar Novo Animal</Link>
-      </article>
     </div>
   );
 }

@@ -117,6 +117,16 @@ function Perfil() {
       <Tabs
         tabs={comps.tabs}
       />
+
+      {
+        usuarioAtivo.tipo === 'D' && usuario.cpf === usuarioAtivo.cpf
+          ? (
+            <article className={sheet.divulgarNovo} role="divulgar-novo">
+              <Link to="/divulgar-animal">Divulgar Novo Animal</Link>
+            </article>
+          )
+          : null
+      }
     </div>
   );
 }
