@@ -26,7 +26,7 @@ function Home() {
           </Link>
 
           <Link to={`/perfil/${usuario.user}`} className={sheet.linkPerfil}>
-            {/* <img src={require(`Assets/Images/users/deisantix.jpg`)} alt="" /> */}
+            <img src={require(`Assets/Images/users/no-icon.png`)} alt="" />
           </Link>
         </div>
       </header>
