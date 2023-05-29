@@ -10,7 +10,7 @@ function Divulgados(props) {
     : '';
 
   return (
-    <>
+    <div className={sheet.divulgadosConteiner}>
       <section className={sheet.divulgados}>
         <div>
           { divulgados }
@@ -18,10 +18,10 @@ function Divulgados(props) {
         { props.divulgados ? '' : <span>Animais divulgados por você aparecerão aqui</span> }
       </section>
 
-      <article>
+      <article className={sheet.divulgarNovo}>
         <Link to="/divulgar-animal">Divulgar Novo Animal</Link>
       </article>
-    </>
+    </div>
   );
 }
 

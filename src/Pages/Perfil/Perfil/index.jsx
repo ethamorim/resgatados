@@ -71,11 +71,11 @@ function Perfil() {
         component: <SobreDivulgante sobre={usuario} />
       }
     ];
-    if (usuarioAtivo.user === usuario.user)
-      tabs.splice(1, 0, {
-        tab: 'Solicitações',
-        component: 'Solicitações'
-      });
+    // if (usuarioAtivo.user === usuario.user)
+    //   tabs.splice(1, 0, {
+    //     tab: 'Solicitações',
+    //     component: 'Solicitações'
+    //   });
 
     return {
       fotoPerfil,
