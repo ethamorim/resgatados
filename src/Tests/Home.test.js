@@ -40,7 +40,6 @@ jest.mock('../Services/UsuarioLoader', () => ({
   __esModule: true,
   ...(jest.requireActual('../Services/UsuarioLoader')),
   getUsuarioAtivo: () => ({
-    "objetivo": "adotar",
     "user": "deisantix",
     "senha": "ytalo123",
     "img": "deisantix.jpg",
@@ -50,7 +49,7 @@ jest.mock('../Services/UsuarioLoader', () => ({
     "idade": 19,
     "mora": "apartamento",
     "maisSobre": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tipo": "adotante"
+    "tipo": "A"
   })
 }));
 

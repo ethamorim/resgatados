@@ -14,6 +14,7 @@ function Tabs(props) {
             <li
               className={el.tab === activeTab ? sheet.ativa : ''}
               key={el.tab}
+              role="tab"
               onClick={() => {
                 if (el.tab !== activeTab)
                   setActiveTab(el.tab);
