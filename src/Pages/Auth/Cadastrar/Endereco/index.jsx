@@ -92,7 +92,7 @@ function Endereco() {
 
             if (cadastro.objetivo === 'A')
               objetoCadastro = {
-                cpf_cnpj: info.cpf,
+                cpf: info.cpf,
                 user: info.user,
                 nome: info.nome,
                 email: info.email,
@@ -108,7 +108,7 @@ function Endereco() {
               };
             else
               objetoCadastro = {
-                cpf_cnpj: info.cpfCnpj,
+                cpf: info.cpfCnpj,
                 user: info.user,
                 nome: info.nome,
                 email: info.email,

@@ -4,7 +4,7 @@ import Screen from 'Layouts/Screen';
 import PataVoltar from 'Components/PataVoltar';
 
 import sheet from './style.module.scss';
-import { getUsuarios } from 'Services/UsuarioLoader';
+// import { getUsuarios } from 'Services/UsuarioLoader';
 
 function Pesquisar() {
   const [ pesquisa, setPesquisa ] = useState('');
@@ -16,8 +16,8 @@ function Pesquisar() {
       return;
     }
 
-    const usuarios = getUsuarios();
-    setResultados(usuarios.filter(el => el.user.includes(pesquisa)));
+    // const usuarios = getUsuarios();
+    // setResultados(usuarios.filter(el => el.user.includes(pesquisa)));
   };
 
   return (

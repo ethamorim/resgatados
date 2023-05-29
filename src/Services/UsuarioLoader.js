@@ -1,19 +1,8 @@
-import usuarios from '../Assets/Data/usuarios.json';
-
-let usuarioAtivo = null;
-
-export function getUsuarios(user) {
-  if (user)
-    return usuarios.find(el => el.user === user);
-  else
-    return usuarios;
-}
-
 export function setUsuarioAtivo(usuario) {
-  usuarioAtivo = usuario;
+  sessionStorage.setItem('usuario', JSON.stringify(usuario));
 }
 
 export function getUsuarioAtivo() {
-  return usuarioAtivo;
+  return JSON.parse(sessionStorage.getItem('usuario'));
 }
 

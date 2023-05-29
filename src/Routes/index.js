@@ -20,7 +20,7 @@ import Perfil from "Pages/Perfil/Perfil";
 import PerfilConfig from 'Pages/Perfil/Config';
 
 import getAnimals from "Services/AnimalLoader";
-import { getUsuarios } from "Services/UsuarioLoader";
+// import { getUsuarios } from "Services/UsuarioLoader";
 
 export default createBrowserRouter([
   {
@@ -80,8 +80,9 @@ export default createBrowserRouter([
   {
     path: '/perfil/:username',
     element: <Perfil />,
-    loader: ({ params }) => {
-      return getUsuarios(params.username);
+    loader: async ({ params }) => {
+      const { data } = await axios.get(`/usuarios/${params.username}`);
+      return data;
     }
   },
   {

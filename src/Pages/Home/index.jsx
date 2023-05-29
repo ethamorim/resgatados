@@ -25,8 +25,8 @@ function Home() {
             <i className='material-icons'>search</i>
           </Link>
 
-          <Link to={`/perfil/${null}`} className={sheet.linkPerfil}>
-            <img src={require(`Assets/Images/users/deisantix.jpg`)} alt="" />
+          <Link to={`/perfil/${usuario.user}`} className={sheet.linkPerfil}>
+            {/* <img src={require(`Assets/Images/users/deisantix.jpg`)} alt="" /> */}
           </Link>
         </div>
       </header>

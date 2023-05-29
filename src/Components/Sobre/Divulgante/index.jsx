@@ -12,8 +12,8 @@ function SobreDivulgante(props) {
         <label>endereço:</label>
         <span>{user.endereco}</span>
 
-        <label>contatos</label>
-        <span>{user.contatos[0]} {user.contatos[1]}</span>
+        {/* <label>contatos</label> */}
+        {/* <span>{user.contatos[0]} {user.contatos[1]}</span> */}
       </div>
     </section>
   );

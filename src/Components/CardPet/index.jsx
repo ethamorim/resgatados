@@ -6,6 +6,7 @@ import sheet from './style.module.scss';
 
 function CardPet(props) {
   const pet = props.pet;
+  console.log(pet);
   const navigate = useNavigate();
 
   return (

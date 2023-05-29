@@ -51,13 +51,13 @@ function Perfil() {
     const fotoPerfil = usuario.verificado
       ? (
         <div className={`${sheet.foto} ${sheet.verificado}`}>
-          <img src={EscudoVerificado} alt="" className={sheet.escudo} />
-          <img src={require('Assets/Images/users/' + usuario.img)} alt="" />
+          {/* <img src={EscudoVerificado} alt="" className={sheet.escudo} /> */}
+          {/* <img src={require('Assets/Images/users/' + usuario.img)} alt="" /> */}
         </div>
       )
       : (
         <div className={sheet.foto}>
-          <img src={require('Assets/Images/users/' + usuario.img)} alt="" />
+          {/* <img src={require('Assets/Images/users/' + usuario.img)} alt="" /> */}
         </div>
       );
 
