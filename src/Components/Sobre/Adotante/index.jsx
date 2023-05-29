@@ -4,7 +4,6 @@ import sheet from '../style.module.scss';
 
 function SobreAdotante(props) {
   const user = props.sobre;
-  const idade = new Date().getFullYear() - new Date(user.dataNascimento).getFullYear();
 
   const tagContribuinte = user.contribuinte
     ? (
@@ -22,20 +21,20 @@ function SobreAdotante(props) {
         <div className={sheet.row}>
           <div>
             <label>objetivo:</label>
-            <span>{user.objetivo}</span>
+            <span>Adotar</span>
           </div>
 
-          <div>
+          {/* <div>
             <label>idade:</label>
             <span>{idade} anos</span>
-          </div>
+          </div> */}
         </div>
 
         <label>mora em:</label>
-        <span>{user.mora}</span>
+        <span>{user.endereco}</span>
 
         <label>mais sobre:</label>
-        <p>{user.maisSobre}</p>
+        <p>{user.descricao}</p>
       </div>
 
       { tagContribuinte }

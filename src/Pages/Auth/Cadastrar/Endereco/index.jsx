@@ -93,7 +93,7 @@ function Endereco() {
 
             if (cadastro.objetivo === 'A')
               objetoCadastro = {
-                cpf: info.cpf,
+                cpf: info.cpfCnpj,
                 user: info.user,
                 nome: info.nome,
                 email: info.email,

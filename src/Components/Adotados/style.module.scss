@@ -1,6 +1,16 @@
 .adotados {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+
+  & > div {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  & > span {
+    font-family: 'Orienta', sans-serif;
+    color: hsla(0, 0%, 0%, 0.663);
+    display: block;
+    text-align: center;
+  }
 }

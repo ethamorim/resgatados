@@ -1,5 +1,8 @@
 export function setUsuarioAtivo(usuario) {
-  sessionStorage.setItem('usuario', JSON.stringify(usuario));
+  if (usuario === null)
+    sessionStorage.removeItem('usuario')
+  else
+    sessionStorage.setItem('usuario', JSON.stringify(usuario));
 }
 
 export function getUsuarioAtivo() {

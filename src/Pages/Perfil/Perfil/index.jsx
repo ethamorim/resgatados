@@ -84,7 +84,7 @@ function Perfil() {
   };
 
   let comps;
-  if (usuario.objetivo === 'adotar') {
+  if (usuario.tipo === 'A') {
     comps = renderAdotante();
   } else {
     comps = renderDivulgante();
